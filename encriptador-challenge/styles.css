@@ -1,0 +1,182 @@
+*{
+    border-color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 550;
+    text-decoration: #ec3434;
+}
+
+body{
+    width: 90vw;
+    height: 50vw;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-left: 45px;
+    width: 15%;
+    margin-bottom: -30px;
+}
+
+main{
+    width: 90vw;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.input{
+    resize: none;
+    border: none;
+    margin-top: 40px;
+    text-transform: lowercase;
+}
+
+.div-btns{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 6%;
+}
+
+.div-copiar{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 6%;
+}
+
+.condiciones{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.div-output{
+    display: block;
+    margin-top: 0px;
+}
+
+.output{
+    background-color: white;
+    background-image: url(https://cdn.dribbble.com/users/1162077/screenshots/4158668/media/df13a1cc2271bd274d49d7ac13a0ff4e.png?compress=1&resize=768x576&vertical=top);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: relative;
+    resize: none;
+    border: 3px solid #ec3434;
+    border-radius: 25px;
+    height: 79.7%;
+    text-align: center;
+}
+
+.btn-encriptar, .btn-copiar{
+    font-size: 24px;
+    color: #ec3434;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 30px;
+    vertical-align: bottom;
+    font-weight: bold;
+    border: 3px solid #ec3434;
+    transition-duration: 50ms;
+}
+
+.btn-desencriptar{
+    font-size: 24px;
+    background-color: #ec3434;
+    color: aliceblue;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    vertical-align: bottom;
+    font-weight: bold;
+    border: 3px solid #ec3434;
+    transition-duration: 50ms;
+}
+
+.btn-copiar{
+    margin-top: 5px;
+    margin-left: 20px;
+    vertical-align: bottom;
+}
+
+.btn-encriptar:hover, .btn-copiar:hover, .btn-desencriptar:hover{
+    font-size: 26px;
+}
+
+footer{
+    color: aliceblue;
+    background-color: #ec3434;
+    height: 2%;
+    margin: 0 auto;
+    margin-left: 50px;
+    text-align: center;
+    padding: 20px 20px;
+    width: 80vw;
+    font-size: 20px;
+}
+
+@media screen and (min-width:375px) and (max-width:768px) {
+
+    .logo{
+        width: 90%;
+        margin-top: -10%;
+        margin-bottom: -25%;
+        margin-left: 45%;
+    }
+
+    main{
+        justify-content: center;
+        flex-direction: column;
+        align-items: baseline;
+        padding: 0 auto;
+    }
+
+    .input{
+        margin-left: 20px;
+        width: 555px;
+    }
+
+    .btn-encriptar, .btn-desencriptar{
+        width: 45%;
+        height: 70px;
+    }
+
+    .div-btns{
+        display: flex;
+        margin-top: 0 auto;
+        margin-right: 35px;
+    }
+
+    .div-output{
+        position: static;
+        width: 90%;
+    }
+
+    .output{
+        margin-right: 45px;
+        width: 530px;
+        background-size: 80%;
+    }
+
+    .div-copiar{
+        display: flex;
+        margin-left: 70%;
+    }
+
+    .btn-copiar{ 
+        width: 250px;
+        height: 70px;
+    }
+
+    footer{
+        width: 450px;
+    }
+
+};

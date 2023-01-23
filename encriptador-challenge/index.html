@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="imagenes/oracle.png" alt="Logo de Oracle" class="logo">
+        </header>
+
+        <main>
+            <div class="div-input">
+                <textarea cols="42" rows="10" placeholder="Ingrese su texto aqui" class="input" id="input"></textarea>
+                <div>
+                    <h6 class="condiciones">*Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="div-btns">
+                    <input value="Encriptar" type="button" class="btn-encriptar" onclick="btnEncriptar()">
+                    <input value="Desencriptar" type="button" class="btn-desencriptar" onclick="btnDesencriptar()">
+                </div>
+            </div>
+            <div class="div-output">
+                <textarea cols="18" rows="10" placeholder="Nada encontrado" class="output" id="output"></textarea>
+                <div class="div-copiar">
+                    <input value="Copiar" type="button" class="btn-copiar" id="copiar" onclick="btnCopiar()">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h6>Un projecto para ONE/Alura latam por Ivan Tovarovic</h6>
+        </footer>
+        
+    </body>
+    <script src="script.js"></script>
+</html>
+
